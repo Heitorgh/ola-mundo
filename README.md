@@ -1,4 +1,3 @@
-
 idade = int(input('digite sua idade entre 10 e 19'))
 peso = float(input('digite seu peso'))
 altura = float(input('digite sua altura em metros'))
