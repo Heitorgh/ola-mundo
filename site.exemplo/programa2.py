@@ -2,5 +2,8 @@ lista = []
 frase = input('Digite sua frase: ')
 lista.append(frase)
 print(lista)
-lista.replace('digite a palavra que vai sair e a que vai entar: ')
+pa = input('Digite a palavra que você quer substituir: ')
+pn = input('Digite a palavra nova: ')
+lista= frase.replace(pa, pn)
 print(lista)
+
