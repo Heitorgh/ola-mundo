@@ -14,5 +14,13 @@ print(frase_inversa)
 cont = input('Digite a letra que você quer contar: ')
 cont2 = lista.count(cont)
 print(cont2)
+print('\n--- Resumo das Informações ---')
+print(f'Frase original: {frase}')
+print(f'a quantidade de palavras é: {qtd}')
+print(f'Palavra substituída: {pa} por {pn}')
+print(f'Frase após substituição: {lista}')
+print(f'Frase invertida (palavras): {frase_inversa}')
+print(f'a quantidade de vezes que aparece a letra {cont} é {cont2} vezes!')
+print('\n-------------------------------')
 
 
