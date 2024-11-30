@@ -21,16 +21,14 @@ while 0 <= Notas <= 10 :
 
         Minimo = Notas
     
-
-
-    Notas = float(input('Entre com outra nota de 0 a 10: '))
-
-if NN > 0:
     Media = SDN / NN
 
     V = (SQ / NN) - (Media ** 2)
 
     DP = V ** 0.5 
+
+    Notas = float(input('Entre com outra nota de 0 a 10: '))
+ 
  
 print(f'Soma das Notas: {SDN}')
 print(f'Número de Notas: {NN}')
