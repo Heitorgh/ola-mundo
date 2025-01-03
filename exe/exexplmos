@@ -1,7 +1,17 @@
+from time import sleep
+# função para que seja lido apenas numeros inteiros na escolha do menu
 def leiaint(msg):
     while True:
         try:
             n = int(input(msg))
+        except (ValueError, TypeError):
+            print('\033[31mERRO: por favor, digite um numero flutuante valido.\033[m')
+            continue
+        except (KeyboardInterrupt):
+            print('\n\033[31mUsuário preferiu nao digitar esse numero.\033[m')
+            return 0
+        else:
+            return n
 
 #função para organizar o menu
 def linha(tam = 42):
@@ -21,7 +31,22 @@ def menu(lista):
         print(f'{c} - {item}')
         c += 1
     print(linha())
-    opc
+    opc = leiaint('sua opção: ')
+    return opc
+
+
+
+while True:
+    resposta = menu(['Inserir dados de sensores', 'Exibir resultados de relatórios', 'Salvar relatório', 'Sair'])
     
-    
-menu(['Inserir dados de sensores','Exibir resultados de relatórios','Salvar relatório','Sair'])
+    if resposta == 1:
+        print('Opção 1 selecionada: Inserir dados de sensores.')
+    elif resposta == 2:
+        print('Opção 2 selecionada: Exibir resultados de relatórios.')
+    elif resposta == 3:
+        print('Opção 3 selecionada: Salvar relatório.')
+    elif resposta == 4:
+        print('Consulta encerrada.')
+        break
+    else:
+        print('\033[31mERRO: Opção inválida. Escolha entre 1 e 4.\033[m')
