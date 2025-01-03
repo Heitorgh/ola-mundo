@@ -1,0 +1,5 @@
+Media: 22.5
+Maxima: 51.0
+Minima: 2.0
+Alertas: 51.0
+Somas: [54.0, 99.0, 39.0, 57.0]
